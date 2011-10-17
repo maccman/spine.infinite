@@ -2,6 +2,8 @@
 
 This is an example of infinite scrolling using [Spine](http://spinejs.com) and Rails.
 
+You can find a live demo [here](http://spine-infinite.herokuapp.com/).
+
 ##Source
 
 The files you need to inspect are:
