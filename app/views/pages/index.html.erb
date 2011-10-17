@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Infinite</title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+  <script type="text/javascript" charset="utf-8">
+    jQuery(function(){
+      new Pages({el: $("#pages")});
+    });
+  </script>
+</head>
+<body>
+  <div id="pages"></div>
+</body>
+</html>
