@@ -4,7 +4,7 @@ class Page extends Spine.Model
   
   @fetch (params) ->
     index  = @last()?.id or 0
-    return if index is @index
+    return false if index is @index
     @index = index
     
     params or= 
