@@ -12,3 +12,21 @@ html, body {
   -moz-box-shadow: rgba(100, 100, 100, 0.3) 0 2px 6px;
   box-shadow: rgba(100, 100, 100, 0.3) 0 2px 6px;
 }
+
+#pages .loading {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+  padding: 5px;
+  background: #ffffcc;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s linear;
+}
+
+#pages.loading .loading {
+  opacity: 1;
+}
+
+#pages h1 {
+  margin: 0 0 8px 0;
+}
