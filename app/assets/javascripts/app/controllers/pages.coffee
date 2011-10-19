@@ -17,19 +17,17 @@ class Pages extends Spine.Controller
     
     Page.bind 'refresh', =>
       @el.removeClass('loading')
+      @footer.waypoint(@scroll, offset: '80%')
       @render(arguments...)
-      @footer.waypoint(offset: '100%')
 
     Page.fetch()
-
-    @footer.bind 'waypoint.reached', @scroll
     
   render: (items = []) =>
     for item in items
       @items.append JST['app/views/pages/item'](item)
       
   scroll: (e, direction) =>
-    @footer.waypoint('remove')
+    @footer.waypoint('destroy')
     Page.fetch()
 
 window.Pages = Pages

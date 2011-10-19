@@ -8,8 +8,9 @@ You can find a live demo [here](http://spine-infinite.herokuapp.com/).
 
 The files you need to inspect are:
 
-* `app/assets/javascripts/app/model/page.rb`
-* `app/assets/javascripts/app/controllers/pages.rb`
+* `app/assets/javascripts/app/models/page.coffee`
+* `app/assets/javascripts/app/controllers/pages.coffee`
+* `app/controllers/pages_controller.rb`
 
 ##Usage
 
